@@ -83,6 +83,7 @@ export default {
       </div>
     </div>
   </header>
+  <jumbotron />
 </template>
 
 <style lang="scss" scoped>
