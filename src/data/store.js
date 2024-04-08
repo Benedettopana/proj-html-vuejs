@@ -186,11 +186,16 @@ export const store = reactive({
   // % Footer
   address: {
     title: "Address",
-    info: {
-      address: "",
-      support: "",
-      email: "",
-    },
+    // info: {
+    //   address: "382 NE 191st St # 87394 Miami, FL 33179-3899",
+    //   support: "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
+    //   email: "support@maxcoach.com",
+    // },
+    info: [
+      "382 NE 191st St # 87394 Miami, FL 33179-3899",
+      "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
+      "support@maxcoach.com",
+    ],
   },
   // % /Footer
 });

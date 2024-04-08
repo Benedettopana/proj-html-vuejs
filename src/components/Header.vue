@@ -28,13 +28,13 @@ export default {
       <div class="btn">Get Ticket</div>
     </div>
     <!--* ticket countdown -->
-    <div id="menu" class="container-fluid">
+    <div id="menu" class="container-xxl">
       <!--% Mobile: 1 col (hamburger) - tablet: 2 col (tolgo social) - desktop: 3 col FULL-->
       <div
-        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-around align-items-center"
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-between align-items-center"
       >
         <!--! logo -->
-        <div id="logo" class="col d-flex justify-content-center">
+        <div id="logo" class="col">
           <img src="../../../public/img/dark-logo.png" alt="MaxCoach" />
         </div>
         <!--! /logo -->
@@ -73,7 +73,7 @@ export default {
         <!-- TODO: Stampa dinamica -->
         <!--? /Dropdown menu -->
         <!--* Social icon -->
-        <div id="social" class="col d-flex justify-content-center">
+        <div id="social" class="col d-flex justify-content-end">
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -97,6 +97,7 @@ export default {
 }
 #menu {
   line-height: 80px;
+  // width: 100%;
   #logo {
     img {
       height: 26px;
@@ -113,7 +114,7 @@ export default {
       color: $color-boulder;
       // color: $color-dusty-gray;
       font-size: 1.1em;
-      margin: 0 0.8em;
+      margin: 0 0.7em;
     }
   }
 }

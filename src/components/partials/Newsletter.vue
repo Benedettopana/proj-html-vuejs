@@ -1,13 +1,4 @@
-<script>
-import { store } from "./../../data/store.js";
-export default {
-  data() {
-    return {
-      store,
-    };
-  },
-};
-</script>
+<script></script>
 <template>
   <div id="newsletter" class="container-fluid">
     <!--! img position -->
@@ -41,7 +32,9 @@ export default {
 @use "../../assets/scss/partials/general" as *;
 @use "../../assets/scss/partials/variables" as *;
 #newsletter {
+  ////////////////////// DEBUG
   margin-top: 300px;
+  ////////////////////// DEBUG
   height: 200px;
   background-color: $color-bay-of-many;
   color: $color-white;
