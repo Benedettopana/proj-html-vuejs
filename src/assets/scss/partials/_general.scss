@@ -1,1 +1,24 @@
 @use "./variables" as *;
+header {
+  height: 78px;
+  // line-height: 78px;
+}
+body {
+  font-family: "Noto Sans TC Variable", sans-serif;
+}
+img {
+  //? img fix
+  width: 100%;
+}
+
+nav {
+  ul {
+    //! Sovrascrivo colore di Bootstrap
+    --bs-nav-link-color: $color-cod-gray !important;
+    //! Sovrascrivo colore HOVER di Bootstrap
+    --bs-nav-link-hover-color: $color-matrix !important;
+    &:hover {
+      color: $color-matrix !important;
+    }
+  }
+}
