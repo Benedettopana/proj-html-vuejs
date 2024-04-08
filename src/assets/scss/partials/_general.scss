@@ -13,12 +13,17 @@ header {
 }
 body {
   font-family: "Noto Sans TC Variable", sans-serif;
+  margin-top: 130px;
 }
 img {
   //? img fix
   width: 100%;
 }
 
+a {
+  // --bs-nav-link-color: $color-cod-gray !important;
+  color: $color-boulder !important;
+}
 nav {
   ul {
     //! Sovrascrivo colore di Bootstrap

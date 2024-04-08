@@ -159,6 +159,7 @@ export const store = reactive({
   //? /item social icon
 
   //? Action
+  // TODO: Aggiungere icone
   action: [
     {
       actionIcon: "Measure",
@@ -186,16 +187,34 @@ export const store = reactive({
   // % Footer
   address: {
     title: "Address",
-    // info: {
-    //   address: "382 NE 191st St # 87394 Miami, FL 33179-3899",
-    //   support: "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
-    //   email: "support@maxcoach.com",
-    // },
     info: [
       "382 NE 191st St # 87394 Miami, FL 33179-3899",
       "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
       "support@maxcoach.com",
     ],
   },
+
+  socialFooter: [
+    {
+      iconName: "Facebook",
+      iconLink: "#",
+      icon: "fa-brands fa-square-facebook",
+    },
+    {
+      iconName: "Twitter",
+      iconLink: "#",
+      icon: "fa-brands fa-twitter",
+    },
+    {
+      iconName: "Instagram",
+      iconLink: "#",
+      icon: "fa-brands fa-instagram",
+    },
+    {
+      iconName: "Linkedin",
+      iconLink: "#",
+      icon: "fa-brands fa-linkedin-in",
+    },
+  ],
   // % /Footer
 });

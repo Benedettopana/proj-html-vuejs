@@ -14,14 +14,18 @@
     />
     <!--! /img position -->
     <!--% FIXME: centrare -->
-    <div class="container-xl">
-      <div class="row justify-content-center align-items-center">
+    <div class="container-xl h-100">
+      <div class="row justify-content-center align-items-center h-100">
         <div class="col-3 d-flex justify-content-center align-items-center">
           <!-- TODO:Cambiare font -->
           <h2 class="text-end ms-3">Newsletter to get in touch</h2>
         </div>
         <div class="col-6 offset-1 d-flex align-items-start">
-          <input type="text" class="border-bot" placeholder="Your e-mail" />
+          <div class="border-bot d-flex justify-content-between">
+            <input type="text" class="" placeholder="Your e-mail" />
+            <!-- <div class="arr"></div> -->
+            <i class="fa-solid fa-arrow-right-long arr"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -32,9 +36,6 @@
 @use "../../assets/scss/partials/general" as *;
 @use "../../assets/scss/partials/variables" as *;
 #newsletter {
-  ////////////////////// DEBUG
-  margin-top: 300px;
-  ////////////////////// DEBUG
   height: 200px;
   background-color: $color-bay-of-many;
   color: $color-white;
@@ -59,15 +60,26 @@
     border-bottom: 2px solid $color-tower-gray;
     width: 80%;
     line-height: 40px;
-    background-color: $color-bay-of-many;
-  }
-  input {
-    border: none;
-    color: $color-white;
     font-size: 1.3em;
-    font-weight: 400;
-    &:focus {
-      outline: none !important;
+    input {
+      border: none;
+      color: $color-white;
+      background-color: $color-bay-of-many;
+
+      font-weight: 400;
+      &:focus {
+        outline: none !important;
+      }
+      &::placeholder {
+        color: $color-white;
+        font-size: 1.1em;
+        opacity: 1;
+      }
+    }
+    .arr {
+      color: $color-white;
+      text-align: end;
+      line-height: 40px;
     }
   }
 }
