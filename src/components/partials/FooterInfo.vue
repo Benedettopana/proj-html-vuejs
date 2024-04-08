@@ -1,6 +1,10 @@
 <script>
 import { store } from "./../../data/store.js";
+import Instagram from "./Instagram.vue";
 export default {
+  components: {
+    Instagram,
+  },
   data() {
     return {
       store,
@@ -12,7 +16,7 @@ export default {
 <template>
   <div class="container-xxl footer-info">
     <div
-      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center align-items-center"
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center align-content-center"
     >
       <div id="address" class="col">
         <h5 class="mb-3">{{ store.address.title }}</h5>
@@ -25,7 +29,6 @@ export default {
             v-for="(item, index) in store.socialFooter"
             :key="index"
           >
-            <!-- TODO: TOGLIERE Style link -->
             <a :href="item.iconLink" target="_blank"
               ><i :class="item.icon"></i
             ></a>
@@ -34,16 +37,34 @@ export default {
       </div>
 
       <div id="info-explore" class="col">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque cum
-        hic, accusantium tempore dolores alias porro doloremque eos ducimus
-        architecto, in quis voluptatem facere accusamus beatae repellendus
-        cumque eius eveniet?
+        <div class="row row-cols-1 row-cols-md-2 justify-content-between">
+          <!--? Explore -->
+          <div class="col">
+            <h5 class="mb-3">{{ store.exploreFooter.title }}</h5>
+            <p
+              class="explore"
+              v-for="(item, index) in store.exploreFooter.items"
+              :key="index"
+            >
+              <a href="#">{{ item }}</a>
+            </p>
+          </div>
+          <!--? Information -->
+          <div class="col">
+            <h5 class="mb-3">{{ store.informationFooter.title }}</h5>
+            <p
+              class="information"
+              v-for="(item, index) in store.informationFooter.items"
+              :key="index"
+            >
+              <a href="#">{{ item }}</a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div id="latest-post" class="col">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium
-        alias et a distinctio delectus quasi optio non maiores repudiandae aut
-        officiis dolor unde est cumque corporis doloremque, expedita culpa.
+        <Instagram />
       </div>
     </div>
   </div>
@@ -65,14 +86,16 @@ export default {
       font-weight: 800;
     }
 
-    & span {
-      font-size: 0.85em;
-      color: $color-boulder;
-    }
     .icon {
       margin-right: 30px;
       font-size: 1.5em;
     }
+  }
+  & span,
+  .explore,
+  .information {
+    font-size: 0.85em;
+    color: $color-boulder;
   }
 }
 </style>

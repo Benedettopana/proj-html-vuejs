@@ -216,5 +216,31 @@ export const store = reactive({
       icon: "fa-brands fa-linkedin-in",
     },
   ],
+
+  //*Explore
+  exploreFooter: {
+    title: "Explore",
+    items: ["Start here", "Success story", "Blog", "Courses", "Contact us"],
+  },
+  //*Information
+  informationFooter: {
+    title: "Information",
+    items: [
+      "Membership",
+      "Purchase guide",
+      "Privacy policy",
+      "Terms of services",
+    ],
+  },
+
+  instagramFooter: {
+    title: "Instagram",
+    tag: "@maxcoach",
+    photo: [
+      "120084500_197897808368764_8114555493043279565_n.jpg",
+      "120012142_177596140500760_8623485824101406058_n.jpg",
+      "120099363_364334431619755_7198812647386067017_n.jpg",
+    ],
+  },
   // % /Footer
 });
