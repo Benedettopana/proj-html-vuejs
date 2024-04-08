@@ -1,6 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+  //! HEADER
   //? item nav menu
   navItem: [
     {
@@ -181,4 +182,15 @@ export const store = reactive({
     },
   ],
   //? /Action
+  //! /HEADER
+  // % Footer
+  address: {
+    title: "Address",
+    info: {
+      address: "",
+      support: "",
+      email: "",
+    },
+  },
+  // % /Footer
 });

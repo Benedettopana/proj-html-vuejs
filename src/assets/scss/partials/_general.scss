@@ -1,7 +1,14 @@
 @use "./variables" as *;
 header {
-  height: 78px;
-  line-height: 78px;
+  height: 130px;
+  width: 100%;
+  // line-height: 80px;
+  background-color: $color-white;
+  // Posizionamento fisso
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 body {
   font-family: "Noto Sans TC Variable", sans-serif;
