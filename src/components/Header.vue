@@ -12,6 +12,7 @@
           <img src="../../../public/img/dark-logo.png" alt="MaxCoach" />
         </div>
         <!--! /logo -->
+        <!-- TODO: Stampa dinamica -->
         <!--? Dropdown menu -->
         <nav id="drop-menu" class="col d-flex justify-content-center">
           <ul class="nav">
@@ -39,13 +40,14 @@
             </li>
           </ul>
         </nav>
+        <!-- TODO: Stampa dinamica -->
         <!--? /Dropdown menu -->
         <!--* Social icon -->
         <div id="social" class="col d-flex justify-content-center">
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-linkedin"></i>
         </div>
         <!--* /Social icon -->
       </div>
@@ -65,10 +67,13 @@
   }
 }
 
-// #drop-menu,
+#drop-menu {
+  color: $color-cod-gray;
+}
 #social {
   color: $color-boulder;
   i {
+    font-size: 1.1em;
     margin: 0 0.8em;
   }
 }
