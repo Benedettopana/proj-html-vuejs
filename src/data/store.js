@@ -232,12 +232,30 @@ export const store = reactive({
   //! /HEADER
 
   //* MAIN
+  coachBG: [
+    {
+      img: "artist-shape-01-600x577.png",
+      id: "shape-0",
+    },
+    {
+      img: "maxcoach-shape-13-150x150.png",
+      id: "shape-1",
+    },
+    {
+      img: "maxcoach-shape-14-1536x343.png",
+      id: "shape-2",
+    },
+    {
+      img: "splashp.svg",
+      id: "shape-3",
+    },
+  ],
   point: [
     [
       {
         pointImg: "artist-box-image-01.png",
         title: "Online Coures",
-        desc: "Online art ccx:lching now offers you a very powerful way to redesign your artist mind.",
+        desc: "Online art coaching now offers you a very powerful way to redesign your artist mind.",
       },
       {
         pointImg: "artist-box-image-02.png",
