@@ -40,7 +40,7 @@ export default {
   margin-right: 30px;
 }
 .top-spacing {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 #pointImg-second,
 #pointImg-first {
