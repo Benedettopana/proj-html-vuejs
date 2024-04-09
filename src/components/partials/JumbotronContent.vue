@@ -1,18 +1,32 @@
 <script>
-export default {};
+import { store } from "../../data/store.js";
+import SectionTitle from "./SectionTitle.vue";
+import BtnPrimary from "./BtnPrimary.vue";
+export default {
+  components: {
+    SectionTitle,
+    BtnPrimary,
+  },
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 <template>
   <div class="hero-get-started">
     <div class="d-flex flex-column justify-content-center align-items-center">
-      <img
+      <!-- <img
         src="../../../../public/img/jumbotron/hello-hero-rossela-script-1.png"
         alt=""
       />
-      <h2 class="mb-5">Artist Coaching And Mentoring Might Be for You</h2>
-
-      <button id="hero-btn" type="button" class="btn btn-primary">
+      <h2 class="mb-5">Artist Coaching And Mentoring Might Be for You</h2> -->
+      <SectionTitle :info="store.title.jumbo" />
+      <BtnPrimary :btnContent="store.button.jumbo" />
+      <!-- <button id="hero-btn" type="button" class="btn btn-primary">
         Get started today
-      </button>
+      </button> -->
     </div>
   </div>
 </template>

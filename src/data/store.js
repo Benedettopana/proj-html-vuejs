@@ -1,6 +1,51 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+  //*BTN content
+  // TODO: fare stili personalizzati
+  button: {
+    jumbo: {
+      content: "Get started today",
+    },
+    ticket: {
+      content: "Get ticket",
+    },
+    coaching: {
+      content: "Get started today",
+    },
+    artist: {
+      content: "View all course",
+      icon: "fa-solid fa-arrow-right-long arr",
+    },
+  },
+  //% TITLE
+  title: {
+    jumbo: {
+      sectionName: "hello-hero-rossela-script-1.png",
+      sectionText: "Artist Coaching And Mentoring Might Be for You",
+    },
+    coaching: {
+      sectionName: "nome",
+      sectionText: "prova",
+    },
+    testimonals: {
+      sectionName: "nome",
+      sectionText: "prova",
+    },
+    artist: {
+      sectionName: "nome",
+      sectionText: "prova",
+    },
+    article: {
+      sectionName: "nome",
+      sectionText: "prova",
+    },
+    upcoming: {
+      sectionName: "nome",
+      sectionText: "prova",
+    },
+  },
+  //% /TITLE
   //! HEADER
   //? item nav menu
   navItem: [
@@ -184,6 +229,8 @@ export const store = reactive({
   ],
   //? /Action
   //! /HEADER
+  //* MAIN
+  //* /MAIN
   // % Footer
   address: {
     title: "Address",

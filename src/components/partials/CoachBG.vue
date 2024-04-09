@@ -1,16 +1,8 @@
 <script>
-import CoachBG from "./CoachBG.vue";
-
-export default {
-  components: {
-    CoachBG,
-  },
-};
+export default {};
 </script>
 <template>
-  <div class="container-fluid">
-    <CoachBG />
-  </div>
+  <div></div>
 </template>
 
 <style lang="scss" scoped>
