@@ -2,11 +2,15 @@
 import { store } from "../../data/store.js";
 import CoachBG from "./CoachBG.vue";
 import SectionTitle from "./SectionTitle.vue";
+import Point from "./Point.vue";
+import Citation from "./Citation.vue";
 
 export default {
   components: {
     CoachBG,
     SectionTitle,
+    Point,
+    Citation,
   },
   data() {
     return {
@@ -17,9 +21,13 @@ export default {
 </script>
 <template>
   <section id="coach" class="container-fluid">
+    <!--% Dynamic BG -->
     <CoachBG />
-    <div class="title"></div>
-    <SectionTitle :info="store.title.coaching" />
+    <!--* Title -->
+    <div class="title"><SectionTitle :info="store.title.coaching" /></div>
+    <!--? Coaching point -->
+    <Point :elem="store.point" />
+    <Citation />
   </section>
 </template>
 

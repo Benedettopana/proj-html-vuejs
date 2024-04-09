@@ -46,6 +46,7 @@ export const store = reactive({
     },
   },
   //% /TITLE
+
   //! HEADER
   //? item nav menu
   navItem: [
@@ -229,8 +230,36 @@ export const store = reactive({
   ],
   //? /Action
   //! /HEADER
+
   //* MAIN
+  point: [
+    [
+      {
+        pointImg: "artist-box-image-01.png",
+        title: "Online Coures",
+        desc: "Online art ccx:lching now offers you a very powerful way to redesign your artist mind.",
+      },
+      {
+        pointImg: "artist-box-image-02.png",
+        title: "One to One",
+        desc: "Getting the necessary clarity about the current state to help you improve your ability.",
+      },
+    ],
+    [
+      {
+        pointImg: "artist-box-image-03.png",
+        title: "Anywhere",
+        desc: "Acces to voluable and gx»rtable which allow you to setup and live anywhere you want.",
+      },
+      {
+        pointImg: "artist-box-image-04.png",
+        title: "On Time",
+        desc: "Punctuality is our top priority it's an essential criteria to assess a program quality.",
+      },
+    ],
+  ],
   //* /MAIN
+
   // % Footer
   address: {
     title: "Address",
