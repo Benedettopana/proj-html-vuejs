@@ -20,6 +20,8 @@ export default {
           "artist-shape-03.png",
           "artist-shape-04.png",
           "artist-shape-05.png",
+          "splash.svg",
+          "splashp.svg",
         ],
       },
     };
@@ -28,6 +30,7 @@ export default {
 </script>
 <template>
   <div class="container-fluid hero">
+    <!-- TODO: Stamparle in modo dinamico -->
     <!--? img hero -->
     <div class="artist-1">
       <img :src="`${imgPath}${artist.hero[0]}`" alt="" />
@@ -58,6 +61,12 @@ export default {
     <div class="shape-5">
       <img :src="`${imgPath}${artist.shape[4]}`" alt="" />
     </div>
+    <div class="shape-6">
+      <img :src="`${imgPath}${artist.shape[5]}`" alt="" />
+    </div>
+    <div class="shape-7">
+      <img :src="`${imgPath}${artist.shape[6]}`" alt="" />
+    </div>
     <!--* /img shape -->
     <!--? Component contenuto JUMBOTRON -->
     <JumbotronContent />
@@ -83,7 +92,9 @@ export default {
   .shape-2,
   .shape-3,
   .shape-4,
-  .shape-5 {
+  .shape-5,
+  .shape-6,
+  .shape-7 {
     position: absolute;
   }
 
@@ -143,6 +154,31 @@ export default {
     right: 156px;
     z-index: 3;
   }
+  .shape-5 {
+    // height: 306px;
+    bottom: 0px;
+    right: 100px;
+    z-index: 3;
+  }
+  .shape-6 {
+    height: 306px;
+    width: 306px;
+    bottom: 5px;
+    right: 325px;
+    z-index: 3;
+  }
+  .shape-7 {
+    height: 820px;
+    width: 620px;
+    top: 20px;
+    right: 80.8%;
+    z-index: 2;
+    transform: rotate(90deg);
+  }
+  // .fill {
+  //   filter: invert(71%) sepia(59%) saturate(2540%) hue-rotate(9deg)
+  //     brightness(107%) contrast(101%);
+  // }
   // /SHAPE
 }
 </style>
