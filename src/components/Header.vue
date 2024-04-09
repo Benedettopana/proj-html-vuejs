@@ -31,11 +31,17 @@ export default {
     <div id="menu" class="container-xxl">
       <!--% Mobile: 1 col (hamburger) - tablet: 2 col (tolgo social) - desktop: 3 col FULL-->
       <div
-        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-between align-items-center"
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-between align-content-center"
       >
         <!--! logo -->
-        <div id="logo" class="col">
-          <img src="../../../public/img/dark-logo.png" alt="MaxCoach" />
+        <div id="logo" class="col d-flex">
+          <div class="">
+            <img
+              class="align-items-center"
+              src="../../../public/img/dark-logo.png"
+              alt="MaxCoach"
+            />
+          </div>
         </div>
         <!--! /logo -->
 
@@ -97,9 +103,12 @@ export default {
   line-height: 50px;
 }
 #menu {
-  line-height: 80px;
+  line-height: 70px;
   // width: 100%;
   #logo {
+    height: 100%;
+    // justify-content: start;
+
     img {
       height: 26px;
       width: 160px;
@@ -111,7 +120,9 @@ export default {
   }
   // social menu
   #social {
+    line-height: 63px;
     i {
+      align-content: center;
       color: $color-boulder;
       // color: $color-dusty-gray;
       font-size: 1.1em;
