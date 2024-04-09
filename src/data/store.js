@@ -25,24 +25,24 @@ export const store = reactive({
       sectionText: "Artist Coaching And Mentoring Might Be for You",
     },
     coaching: {
-      sectionName: "nome",
-      sectionText: "prova",
+      sectionName: "artisti-coaching.png",
+      sectionText: "I understand what it takes to create. I can help you with",
     },
     testimonals: {
-      sectionName: "nome",
-      sectionText: "prova",
+      sectionName: "testimonials.png",
+      sectionText: "Why do people love me?",
     },
     artist: {
-      sectionName: "nome",
-      sectionText: "prova",
+      sectionName: "artisti-coaching.png",
+      sectionText: "Latest Online Courses",
     },
     article: {
-      sectionName: "nome",
-      sectionText: "prova",
+      sectionName: "articles-tips.png",
+      sectionText: "Latest From The Blog",
     },
     upcoming: {
-      sectionName: "nome",
-      sectionText: "prova",
+      sectionName: "upcoming-events.png",
+      sectionText: "Let's Work Together",
     },
   },
   //% /TITLE
