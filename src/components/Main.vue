@@ -1,27 +1,23 @@
 <script>
-import {store} from '../data/store';
-
+import { store } from "../data/store";
+import Coach from "./partials/Coach.vue";
 export default {
-  
-    data(){
-      return {
-        store,
-      }
-    }
-  }
+  components: {
+    Coach,
+  },
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
-
 <template>
-  <div>
-    Main
-  </div>
-  
+  <Coach />
 </template>
 
-
 <style lang="scss" scoped>
-@use '../assets/scss/partials/general' as *;
-@use '../assets/scss/partials/variables' as *;
-
+@use "../assets/scss/partials/general" as *;
+@use "../assets/scss/partials/variables" as *;
 </style>
