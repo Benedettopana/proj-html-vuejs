@@ -4,6 +4,7 @@ import CoachBG from "./CoachBG.vue";
 import SectionTitle from "./SectionTitle.vue";
 import Point from "./Point.vue";
 import Citation from "./Citation.vue";
+import Yt from "./Ytcoach.vue";
 
 export default {
   components: {
@@ -11,6 +12,7 @@ export default {
     SectionTitle,
     Point,
     Citation,
+    Yt,
   },
   data() {
     return {
@@ -28,6 +30,9 @@ export default {
     <!--? Coaching point -->
     <Point :elem="store.point" />
     <Citation />
+    <div class="yt">
+      <Yt />
+    </div>
   </section>
 </template>
 
@@ -36,5 +41,10 @@ export default {
 @use "../../assets/scss/partials/variables" as *;
 #coach {
   margin-top: 75px;
+  .yt {
+    position: relative;
+    width: 100%;
+    height: 720px;
+  }
 }
 </style>

@@ -276,6 +276,36 @@ export const store = reactive({
       },
     ],
   ],
+  youtube: [
+    {
+      img: "artist-video-poster.jpg",
+      id: "img-0",
+    },
+    {
+      img: "circle.svg",
+      id: "img-1",
+    },
+    {
+      img: "icon-youtube-play.png",
+      id: "img-2",
+    },
+    {
+      img: "maxcoach-shape-05-150x150.png",
+      id: "img-3",
+    },
+    {
+      img: "maxcoach-shape-12-150x150.png",
+      id: "img-4",
+    },
+    {
+      img: "splashp.svg",
+      id: "img-5",
+    },
+    {
+      img: "wave.svg",
+      id: "img-6",
+    },
+  ],
   //* /MAIN
 
   // % Footer
