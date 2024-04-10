@@ -5,6 +5,8 @@ import Carousel from "./partials/Carousel.vue";
 import SectionTitle from "./partials/SectionTitle.vue";
 import Artist from "./partials/Artist.vue";
 import Articles from "./partials/Articles.vue";
+import Event from "./partials/Event.vue";
+
 export default {
   components: {
     Coach,
@@ -12,6 +14,7 @@ export default {
     SectionTitle,
     Artist,
     Articles,
+    Event,
   },
   data() {
     return {
@@ -31,6 +34,7 @@ export default {
   </div>
   <Artist />
   <Articles />
+  <Event />
 </template>
 
 <style lang="scss" scoped>
