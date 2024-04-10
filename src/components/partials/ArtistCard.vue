@@ -49,9 +49,11 @@ export default {
   .photo {
     width: 100%;
     height: 328px;
-
+    // object-fit: contain;
+    overflow: hidden;
     img {
       width: 100%;
+      object-fit: cover;
       // aspect-ratio: 1;
     }
   }
@@ -61,6 +63,7 @@ export default {
     width: 90%;
     padding: 20px 24px;
     background-color: $color-white;
+    animation: movementUp 0.7s;
     .price {
       color: $color-tussock-tag;
       &::before {
@@ -91,6 +94,19 @@ export default {
     bottom: 63px;
     border: 2px solid $color-tussock-tag;
     // margin-bottom: 50px;
+  }
+  &:hover img {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  @keyframes movementUp {
+    from {
+      bottom: 0;
+    }
+
+    to {
+      bottom: 63px;
+    }
   }
 }
 </style>
