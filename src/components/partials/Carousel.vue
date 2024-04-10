@@ -44,46 +44,13 @@ export default {
         :modules="modules"
         class="mySwiper"
       >
-        <swiper-slide>
-          <TestimonialCard />
-          <!-- <div>
-            <p class="sub-title">
-              High level of efficiency and scientific teaching methods
-            </p>
-            <h2 class="title">
-              I am free to learn at my own pace, follow my own schedule and
-              choose the subject I want to learn from
-            </h2>
-            <div class="card mb-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-4 square">
-                  <img
-                    src="/img/testimonial-avata-03.jpg"
-                    class="img-fluid rounded-circle"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h6 class="card-title text-uppercase">Florence Themes</h6>
-                    <p class="card-text">
-                      <small class="text-body-secondary">/Free Lancer</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
+        <swiper-slide
+          v-for="(element, index) in store.testimonals"
+          :key="index"
+        >
+          <TestimonialCard :info="element" />
         </swiper-slide>
-        <swiper-slide>
-          <TestimonialCard />
-        </swiper-slide>
-        <swiper-slide>
-          <TestimonialCard />
-        </swiper-slide>
-        <swiper-slide>
-          <TestimonialCard />
-        </swiper-slide>
+        <!-- <swiper-slide> Prova {{ index }} </swiper-slide> -->
       </swiper>
     </div>
   </div>
@@ -95,7 +62,8 @@ export default {
 
 .mySlider {
   margin-top: 200px;
-  height: 600px;
+  // margin-bottom: 500px;
+  // height: 600px;
   width: 100%;
 }
 </style>

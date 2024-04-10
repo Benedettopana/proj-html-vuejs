@@ -16,10 +16,10 @@ export default {
 </script>
 
 <template>
-  <div>
+  <footer>
     <Newsletter />
     <FooterInfo />
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>

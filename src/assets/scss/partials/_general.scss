@@ -16,6 +16,10 @@ body {
   font-family: "Poppins", sans-serif;
   margin-top: 130px;
 }
+
+footer {
+  margin-top: 200px;
+}
 img {
   //? img fix
   width: 100%;
@@ -53,12 +57,12 @@ nav {
 .swiper-pagination-bullet-active {
   background: $color-cod-gray !important;
   transform: scale(1.45);
-  // scale: 1.45;
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  // position: static !important;
 
   /* Center slide text vertically */
   display: flex;

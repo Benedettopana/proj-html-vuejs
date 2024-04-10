@@ -1,31 +1,30 @@
 <script>
-import { store } from "../../data/store";
 export default {
+  props: {
+    info: Object,
+  },
   data() {
-    // props:{}
     return {
-      store,
-      imgPath: "../../../../public/img/jumbotron/",
+      imgPath: "../../../../public/img/testimonial/",
     };
   },
 };
 </script>
 <template>
   <div class="testimonial-card">
-    <p class="me">High level of eficiency and scientific teaching methods</p>
+    <p class="me">{{ info.me }}</p>
     <p class="about-me">
-      I am free to learn at my own pace, follow my own schedule and choose the
-      subject I want to learn from the syllabus. Great study portal for people
-      like me.
+      {{ info.about }}
     </p>
     <div class="d-flex">
       <div class="profile d-flex justify-content-center">
-        <!-- <img class="" src="" alt="" /> -->
-        <div class="canvas"></div>
+        <div class="canvas">
+          <img class="" :src="`${imgPath}${info.img}`" alt="" />
+        </div>
       </div>
       <div class="me">
-        <p class="card-name">Mina hollace</p>
-        <p class="card-activity">/Freelance</p>
+        <p class="card-name">{{ info.name }}</p>
+        <p class="card-activity">{{ info.activity }}</p>
       </div>
     </div>
   </div>
@@ -36,7 +35,7 @@ export default {
 @use "../../assets/scss/partials/variables" as *;
 
 .testimonial-card {
-  width: 570px;
+  width: 570px !important;
   height: 380px;
   background-color: $color-white;
   padding: 40px 50px;
@@ -67,8 +66,8 @@ export default {
     // color: red;
 
     .canvas {
-      width: 70px;
-      aspect-ratio: 1;
+      width: 80px;
+      // aspect-ratio: 1;
       overflow: hidden;
       border-radius: 50%;
       img {

@@ -308,32 +308,36 @@ export const store = reactive({
   ],
   testimonals: [
     {
-      name: "",
-      img: "",
-      activity: "",
-      me: "",
-      about: "",
+      name: "Mina Hollace",
+      img: "artist-testimonial-avatar-02.jpg",
+      activity: "/ Freelancer",
+      me: "High level of efficiency and scientific teaching methods",
+      about:
+        "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
     },
     {
-      name: "",
-      img: "",
-      activity: "",
-      me: "",
-      about: "",
+      name: "Madley Pondor",
+      img: "artist-testimonial-avatar-03.jpg",
+      activity: "IT Specialist",
+      me: "lt's a choice of quality for people with special needs",
+      about:
+        "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
     },
     {
-      name: "",
-      img: "",
-      activity: "",
-      me: "",
-      about: "",
+      name: "Florence Themes",
+      img: "artist-testimonial-avatar-01.jpg",
+      activity: "/ Multimedia Admin",
+      me: "lt's a choice of quality for people with special needs",
+      about:
+        "l'm a very strict person so I require everything to beorganized and neat. Then, l'Il be able to make things right and shine. MaxCoach guys just got me.",
     },
     {
-      name: "",
-      img: "",
-      activity: "",
-      me: "",
-      about: "",
+      name: "Mina Hollace",
+      img: "artist-testimonial-avatar-04.jpg",
+      activity: "/ Freelancer",
+      me: "High level of efficiency and scientific teaching methods",
+      about:
+        "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
     },
   ],
   //* /MAIN

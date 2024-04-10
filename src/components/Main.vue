@@ -22,8 +22,8 @@ export default {
   <div id="slider" class="container-fluid">
     <div class="testimonials mb-2">
       <SectionTitle :info="store.title.testimonals" />
+      <carousel />
     </div>
-    <carousel />
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
 @use "../assets/scss/partials/variables" as *;
 
 #slider {
-  padding-top: 100px;
+  padding: 100px;
   background-color: #faf8f6;
 }
 </style>
