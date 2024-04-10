@@ -2,11 +2,13 @@
 import { store } from "../../data/store.js";
 import SectionTitle from "./SectionTitle.vue";
 import ArticleCard from "./ArticleCard.vue";
+import ArticleBG from "./ArticleBG.vue";
 
 export default {
   components: {
     SectionTitle,
     ArticleCard,
+    ArticleBG,
   },
   props: {},
   data() {
@@ -20,6 +22,7 @@ export default {
 <template>
   <div id="articles" class="container-fluid">
     <!-- TODO: BG -->
+    <ArticleBG />
     <div class="container-xl">
       <div class="title">
         <SectionTitle :info="store.title.article" />

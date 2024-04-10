@@ -81,6 +81,16 @@ export default {
       </div>
       <!-- ? Card laterale -->
     </div>
+
+    <div class="all-post">
+      <p>
+        Get into details now?
+        <span
+          ><a href="#"
+            >View all posts <i class="fa-solid fa-arrow-right-long"></i></a
+        ></span>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -90,7 +100,7 @@ export default {
 .cont {
   display: flex;
   justify-content: center;
-
+  position: relative;
   .big-card {
     width: 500px;
     height: 680px;
@@ -103,6 +113,7 @@ export default {
 
   .big-content,
   .little-content {
+    z-index: 30;
     width: 100%;
     position: absolute;
     top: 70%;
@@ -138,9 +149,6 @@ export default {
     width: 270px;
     // width: 100%;
 
-    h5 {
-      // font-size: 1.3em;
-    }
     img {
       height: 201;
       width: 100%;
@@ -158,6 +166,18 @@ export default {
         aspect-ratio: 1;
       }
     }
+  }
+}
+
+.all-post {
+  position: relative;
+  margin-top: 110px;
+  text-align: center;
+  color: $color-details;
+  font-size: 1.05em;
+  font-weight: bold;
+  a {
+    color: $color-tussock-tag !important;
   }
 }
 </style>
