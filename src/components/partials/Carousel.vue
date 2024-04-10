@@ -12,10 +12,12 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper/modules";
+import TestimonialCard from "./TestimonialCard.vue";
 export default {
   components: {
     Swiper,
     SwiperSlide,
+    TestimonialCard,
   },
   setup() {
     return {
@@ -43,7 +45,8 @@ export default {
         class="mySwiper"
       >
         <swiper-slide>
-          <div>
+          <TestimonialCard />
+          <!-- <div>
             <p class="sub-title">
               High level of efficiency and scientific teaching methods
             </p>
@@ -54,11 +57,11 @@ export default {
             <div class="card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4 square">
-                  <!-- <img
+                  <img
                     src="/img/testimonial-avata-03.jpg"
                     class="img-fluid rounded-circle"
                     alt="..."
-                  /> -->
+                  />
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -70,13 +73,17 @@ export default {
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide>
-        <swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>
+          <TestimonialCard />
+        </swiper-slide>
+        <swiper-slide>
+          <TestimonialCard />
+        </swiper-slide>
+        <swiper-slide>
+          <TestimonialCard />
+        </swiper-slide>
       </swiper>
     </div>
   </div>

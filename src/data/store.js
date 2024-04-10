@@ -306,7 +306,36 @@ export const store = reactive({
       id: "img-6",
     },
   ],
-  testimonals: [],
+  testimonals: [
+    {
+      name: "",
+      img: "",
+      activity: "",
+      me: "",
+      about: "",
+    },
+    {
+      name: "",
+      img: "",
+      activity: "",
+      me: "",
+      about: "",
+    },
+    {
+      name: "",
+      img: "",
+      activity: "",
+      me: "",
+      about: "",
+    },
+    {
+      name: "",
+      img: "",
+      activity: "",
+      me: "",
+      about: "",
+    },
+  ],
   //* /MAIN
 
   // % Footer
