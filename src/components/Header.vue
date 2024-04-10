@@ -30,11 +30,9 @@ export default {
     <!--* ticket countdown -->
     <div id="menu" class="container-xxl">
       <!--% Mobile: 1 col (hamburger) - tablet: 2 col (tolgo social) - desktop: 3 col FULL-->
-      <div
-        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-between align-content-center"
-      >
+      <div class="row justify-content-between align-content-center">
         <!--! logo -->
-        <div id="logo" class="col d-flex">
+        <div id="logo" class="col-3 d-flex">
           <div class="">
             <img
               class="align-items-center"
@@ -48,28 +46,37 @@ export default {
         <!--! TODO: Da far diventare un component -->
         <!-- TODO: Stampa dinamica -->
         <!--? Dropdown menu -->
-        <nav id="drop-menu" class="col d-flex justify-content-center">
+        <nav id="drop-menu" class="col-6 d-flex justify-content-center">
           <ul class="nav">
             <!--% item navbar -->
-            <li class="nav-item active dropdown">
+            <li
+              class="nav-item active dropdown"
+              v-for="(element, index) in store.navItem"
+              :key="index"
+            >
               <a
                 class="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
                 href="#"
                 role="button"
                 aria-expanded="false"
-                >Dropdown</a
+                >{{ element.title }}</a
               >
               <!-- TODO: migliorare grafica + cambio chevron -->
               <!--% azioni dropdown -->
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li v-for="(item, index) in element.action" :key="index">
+                  <a class="dropdown-item" :href="`${item.linkAction}`">{{
+                    item.titleAction
+                  }}</a>
+                </li>
+
+                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li> -->
               </ul>
               <!--% azioni dropdown -->
             </li>
@@ -79,7 +86,7 @@ export default {
         <!-- TODO: Stampa dinamica -->
         <!--? /Dropdown menu -->
         <!--* Social icon -->
-        <div id="social" class="col d-flex justify-content-end">
+        <div id="social" class="col-3 d-flex justify-content-end">
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -116,6 +123,7 @@ export default {
   }
   // dropdown menu
   #drop-menu {
+    font-size: 1em;
     color: $color-cod-gray;
   }
   // social menu

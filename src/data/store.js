@@ -51,7 +51,7 @@ export const store = reactive({
   //? item nav menu
   navItem: [
     {
-      title: "home",
+      title: "Home",
       action: [
         {
           titleAction: "Action",

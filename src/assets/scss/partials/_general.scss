@@ -42,6 +42,19 @@ nav {
   }
 }
 
+//! Sovrascrivo bootstrap
+.dropdown-toggle::after {
+  font-family: FontAwesome;
+  content: "\f078" !important;
+  font-weight: bold;
+  font-size: 0.52em;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+  vertical-align: 0;
+  margin-left: 0;
+}
+
 .container-fluid {
   width: 100vw !important;
   --bs-gutter-x: 0 !important;
