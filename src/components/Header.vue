@@ -1,9 +1,11 @@
 <script>
 import { store } from "../data/store.js";
 import Jumbotron from "./partials/Jumbotron.vue";
+import Timer from "./partials/Timer.vue";
 export default {
   components: {
     Jumbotron,
+    Timer,
   },
   data() {
     return {
@@ -15,17 +17,14 @@ export default {
 
 <template>
   <header>
-    <!--! TODO: Da far diventare un component -->
-
     <!--* ticket countdown -->
     <!-- TODO: Da fare -->
     <div
       id="get-ticket"
       class="container-fluid d-flex justify-content-center align-items-center"
     >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam
-      assumenda expedita nisi, temporibus tenetur error
-      <div class="btn">Get Ticket</div>
+      <Timer />
+      <!-- <div class="btn">Get Ticket</div> -->
     </div>
     <!--* ticket countdown -->
     <div id="menu" class="container-xxl">

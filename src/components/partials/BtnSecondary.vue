@@ -16,12 +16,7 @@ export default {
     {{ btnContent.content }}
   </button> -->
 
-  <button
-    id="btn"
-    type="button"
-    class="btn btn-primary"
-    :class="btnContent.type == 1 ? 'type-1' : 'type-2'"
-  >
+  <button id="btn" type="button" class="btn btn-primary type-1">
     {{ btnContent.content }}
   </button>
 </template>
@@ -41,17 +36,11 @@ export default {
 }
 
 .type-1 {
+  width: 130px !important;
+  height: 32px !important;
   background-color: $btn-type-1;
   &:hover {
     background-color: $color-cerulean;
-    color: $color-white;
-  }
-}
-.type-2 {
-  background-color: $btn-type-2;
-  color: $color-tussock-tag;
-  &:hover {
-    background-color: $color-tussock-tag;
     color: $color-white;
   }
 }

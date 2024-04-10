@@ -2,10 +2,12 @@
 import { store } from "../../data/store.js";
 import SectionTitle from "./SectionTitle.vue";
 import ArtistCard from "./ArtistCard.vue";
+import BtnPrimary from "./BtnPrimary.vue";
 export default {
   components: {
     SectionTitle,
     ArtistCard,
+    BtnPrimary,
   },
   data() {
     return {
@@ -33,6 +35,9 @@ export default {
       </div>
     </div>
     <!-- TODO: AGGIUNGERE BTN -->
+    <div class="mb-5 d-flex justify-content-center">
+      <BtnPrimary :btnContent="store.button.artist" />
+    </div>
   </div>
 </template>
 

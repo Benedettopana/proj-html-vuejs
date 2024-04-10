@@ -49,21 +49,20 @@ export default {
   .photo {
     width: 100%;
     height: 328px;
-    // object-fit: contain;
+
     overflow: hidden;
     img {
       width: 100%;
       object-fit: cover;
-      // aspect-ratio: 1;
     }
   }
   .arti-info {
-    // height: 140px;
     height: 37%;
     width: 90%;
     padding: 20px 24px;
     background-color: $color-white;
-    animation: movementUp 0.7s;
+    // animation: movementUp 0.7s;
+    transition: all 3s !important;
     .price {
       color: $color-tussock-tag;
       &::before {

@@ -1,19 +1,30 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+  //! TIMER
+  timer: {
+    days: 104,
+    hours: 11,
+    min: 34,
+    sec: 5,
+  },
   //*BTN content
   // TODO: fare stili personalizzati
   button: {
     jumbo: {
+      type: 1,
       content: "Get started today",
     },
     ticket: {
+      type: 2,
       content: "Get ticket",
     },
     coaching: {
+      type: 2,
       content: "Get started today",
     },
     artist: {
+      type: 2,
       content: "View all course",
       icon: "fa-solid fa-arrow-right-long arr",
     },
