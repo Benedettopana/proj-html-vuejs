@@ -33,6 +33,7 @@ export default {};
     width: 20px;
     margin: 0 auto;
     aspect-ratio: 1;
+    cursor: pointer;
   }
 }
 </style>
