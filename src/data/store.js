@@ -340,6 +340,65 @@ export const store = reactive({
         "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
     },
   ],
+
+  artistCard: [
+    {
+      img: "artist-course-08-480x480.jpg",
+      price: "18.00",
+      title: "The Acrylic Painting Academy",
+      lesson: "4",
+      student: "50",
+    },
+    {
+      img: "artist-course-07-480x480.jpg",
+      price: "21.00",
+      title: "Drawing and Shading: Complete Course",
+      lesson: "14",
+      student: "50",
+    },
+    {
+      img: "artist-course-06-480x480.jpg",
+      price: "19.00",
+      title: "The Color Theory for Digital Artist",
+      lesson: "7",
+      student: "50",
+    },
+    {
+      img: "artist-course-05-480x480.jpg",
+      price: "35.00",
+      title: "Ultimate Guide to Digital Sketching for Beginner",
+      lesson: "14",
+      student: "50",
+    },
+    {
+      img: "artist-course-04-480x480.jpg",
+      price: "19.00",
+      title: "Portrait Drawing The Smart Way",
+      lesson: "2",
+      student: "50",
+    },
+    {
+      img: "artist-course-03-480x480.jpg",
+      price: "19.00",
+      title: "Mastering Watercolor Painting from Beginner",
+      lesson: "9",
+      student: "50",
+    },
+    {
+      img: "artist-course-02-480x480.jpg",
+      price: "25.00",
+      title: "The Art & Science of Drawing",
+      lesson: "4",
+      student: "50",
+    },
+    {
+      img: "artist-course-01-480x480.jpg",
+      price: "22.00",
+      title: "The Colored Pencil Drawing Course",
+      lesson: "6",
+      student: "50",
+    },
+  ],
   //* /MAIN
 
   // % Footer

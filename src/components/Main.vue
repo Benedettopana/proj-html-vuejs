@@ -3,11 +3,14 @@ import { store } from "../data/store";
 import Coach from "./partials/Coach.vue";
 import Carousel from "./partials/Carousel.vue";
 import SectionTitle from "./partials/SectionTitle.vue";
+// import Articles from "./partials/Artist.vue";
+import Artist from "./partials/Artist.vue";
 export default {
   components: {
     Coach,
     Carousel,
     SectionTitle,
+    Artist,
   },
   data() {
     return {
@@ -25,6 +28,7 @@ export default {
       <carousel />
     </div>
   </div>
+  <Artist />
 </template>
 
 <style lang="scss" scoped>
