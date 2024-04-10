@@ -1,9 +1,12 @@
 <script>
 import { store } from "../../data/store.js";
 import SectionTitle from "./SectionTitle.vue";
+import EventCard from "./EventCard.vue";
+
 export default {
   components: {
     SectionTitle,
+    EventCard,
   },
   data() {
     return {
@@ -16,6 +19,7 @@ export default {
   <div class="container-fluid">
     <div class="container-xl">
       <SectionTitle :info="store.title.upcoming" />
+      <EventCard />
     </div>
   </div>
 </template>

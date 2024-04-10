@@ -399,6 +399,41 @@ export const store = reactive({
       student: "50",
     },
   ],
+
+  event: [
+    [
+      {
+        img: "artist-event-04-250x300.jpg",
+        date: "NOV 22, 2020",
+        title: "Storytelling Workshop",
+        location: "Texas, US",
+        icon: "fa-solid fa-location-dot",
+      },
+      {
+        img: "artist-event-02-250x300.jpg",
+        date: "NOW 23, 2020",
+        title: "International Art Fair 2020",
+        location: "Ha,burg, Germany",
+        icon: "fa-solid fa-location-dot",
+      },
+    ],
+    [
+      {
+        img: "artist-event-03-250x300.jpg",
+        date: "OCT 10, 2020",
+        title: "Painting Art Contest 2020",
+        location: "New York, US",
+        icon: "fa-solid fa-location-dot",
+      },
+      {
+        img: "artist-event-01-250x300.jpg",
+        date: "DEC 15, 2020",
+        title: "Street Performance: Call for Artist",
+        location: "Illinois, US",
+        icon: "fa-solid fa-location-dot",
+      },
+    ],
+  ],
   //* /MAIN
 
   // % Footer
