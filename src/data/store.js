@@ -80,6 +80,10 @@ export const store = reactive({
           titleAction: "Separated link",
           linkAction: "#",
         },
+        {
+          titleAction: "Separated link 2",
+          linkAction: "#",
+        },
       ],
     },
     {

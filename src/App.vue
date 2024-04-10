@@ -39,8 +39,8 @@ export default {
               store.timer.days--;
               if (store.timer.days == 0) {
                 // RESET
-                store.timer.hours = 104;
-                store.timer.days = 11;
+                store.timer.days = 104;
+                store.timer.hours = 11;
                 store.timer.min = 34;
                 store.timer.sec = 42;
               }

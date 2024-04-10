@@ -24,9 +24,8 @@ export default {
       class="container-fluid d-flex justify-content-center align-items-center"
     >
       <Timer />
-      <!-- <div class="btn">Get Ticket</div> -->
     </div>
-    <!--* ticket countdown -->
+    <!--* /ticket countdown -->
     <div id="menu" class="container-xxl">
       <!--% Mobile: 1 col (hamburger) - tablet: 2 col (tolgo social) - desktop: 3 col FULL-->
       <div class="row justify-content-between align-content-center">
@@ -43,7 +42,6 @@ export default {
         <!--! /logo -->
 
         <!--! TODO: Da far diventare un component -->
-        <!-- TODO: Stampa dinamica -->
         <!--? Dropdown menu -->
         <nav id="drop-menu" class="col-6 d-flex justify-content-center">
           <ul class="nav">
@@ -61,7 +59,6 @@ export default {
                 aria-expanded="false"
                 >{{ element.title }}</a
               >
-              <!-- TODO: migliorare grafica + cambio chevron -->
               <!--% azioni dropdown -->
               <ul class="dropdown-menu">
                 <li v-for="(item, index) in element.action" :key="index">
@@ -69,13 +66,6 @@ export default {
                     item.titleAction
                   }}</a>
                 </li>
-
-                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li> -->
               </ul>
               <!--% azioni dropdown -->
             </li>
