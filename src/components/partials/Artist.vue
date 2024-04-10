@@ -42,7 +42,7 @@ export default {
 
 .container-xxl {
   margin-top: 60px;
-
+  margin-bottom: 88px;
   // .art {
   //   margin: 0 3px;
   // }

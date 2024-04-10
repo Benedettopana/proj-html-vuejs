@@ -89,7 +89,7 @@ export default {
   &:hover .arti-info {
     position: absolute;
     bottom: 63px;
-    border: 2px solid $color-matrix;
+    border: 2px solid $color-tussock-tag;
     // margin-bottom: 50px;
   }
 }
