@@ -5,6 +5,7 @@ import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 import { computed } from "vue";
 import Actions from "./components/partials/Actions.vue";
+import BacktoTop from "./components/partials/BacktoTop.vue";
 
 // import {store} from './data/store';
 
@@ -14,6 +15,7 @@ export default {
     Main,
     Footer,
     Actions,
+    BacktoTop,
   },
 
   data() {
@@ -58,6 +60,7 @@ export default {
 
 <template>
   <Header />
+  <BacktoTop />
   <Actions />
   <Main />
   <Footer />
