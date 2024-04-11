@@ -75,6 +75,7 @@ export default {
   // width: 100%;
   #logo {
     height: 100%;
+    line-height: 90px;
     // justify-content: start;
 
     img {
@@ -84,7 +85,7 @@ export default {
   }
 
   #social {
-    line-height: 63px;
+    line-height: 90px;
   }
 }
 // logo

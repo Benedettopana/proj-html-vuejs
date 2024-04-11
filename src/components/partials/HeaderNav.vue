@@ -40,7 +40,9 @@ export default {
 @use "../../assets/scss/partials/general" as *;
 @use "../../assets/scss/partials/variables" as *;
 // dropdown menu
+
 #drop-menu {
+  height: 100%;
   font-size: 1em;
   color: $color-cod-gray;
 }

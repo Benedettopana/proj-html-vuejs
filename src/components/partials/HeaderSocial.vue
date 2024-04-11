@@ -6,7 +6,7 @@ export default {
 };
 </script>
 <template>
-  <div v-for="(element, index) in icon" :key="index">
+  <div class="social" v-for="(element, index) in icon" :key="index">
     <a :href="element.iconLink" target="_blank">
       <i :class="element.icon"></i>
     </a>
