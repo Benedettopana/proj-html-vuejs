@@ -2,10 +2,14 @@
 import { store } from "../data/store.js";
 import Jumbotron from "./partials/Jumbotron.vue";
 import Timer from "./partials/Timer.vue";
+import HeaderNav from "./partials/HeaderNav.vue";
+import HeaderSocial from "./partials/HeaderSocial.vue";
 export default {
   components: {
     Jumbotron,
     Timer,
+    HeaderNav,
+    HeaderSocial,
   },
   data() {
     return {
@@ -41,45 +45,13 @@ export default {
         </div>
         <!--! /logo -->
 
-        <!--! TODO: Da far diventare un component -->
         <!--? Dropdown menu -->
-        <nav id="drop-menu" class="col-6 d-flex justify-content-center">
-          <ul class="nav">
-            <!--% item navbar -->
-            <li
-              class="nav-item active dropdown"
-              v-for="(element, index) in store.navItem"
-              :key="index"
-            >
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-expanded="false"
-                >{{ element.title }}</a
-              >
-              <!--% azioni dropdown -->
-              <ul class="dropdown-menu">
-                <li v-for="(item, index) in element.action" :key="index">
-                  <a class="dropdown-item" :href="`${item.linkAction}`">{{
-                    item.titleAction
-                  }}</a>
-                </li>
-              </ul>
-              <!--% azioni dropdown -->
-            </li>
-          </ul>
-        </nav>
-        <!--! TODO: Da far diventare un component -->
-        <!-- TODO: Stampa dinamica -->
+        <HeaderNav :navItem="store.navItem" />
+
         <!--? /Dropdown menu -->
         <!--* Social icon -->
         <div id="social" class="col-3 d-flex justify-content-end">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
+          <HeaderSocial :icon="store.social" />
         </div>
         <!--* /Social icon -->
       </div>
@@ -110,21 +82,9 @@ export default {
       width: 160px;
     }
   }
-  // dropdown menu
-  #drop-menu {
-    font-size: 1em;
-    color: $color-cod-gray;
-  }
-  // social menu
+
   #social {
     line-height: 63px;
-    i {
-      align-content: center;
-      color: $color-boulder;
-      // color: $color-dusty-gray;
-      font-size: 1.1em;
-      margin: 0 0.7em;
-    }
   }
 }
 // logo
