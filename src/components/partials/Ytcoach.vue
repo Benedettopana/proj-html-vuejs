@@ -53,7 +53,7 @@ export default {
 
   #img-2 {
     left: 50%;
-    bottom: 50%;
+    bottom: 40%;
     transform: translate(-50%, -50%);
     z-index: 10;
   }
